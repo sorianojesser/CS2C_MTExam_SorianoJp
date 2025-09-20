@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Ilocos Sur - Home</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header>
+    <div class="container header-container">
+      <h1>Ilocos Sur</h1>
+      <nav>
+        <ul class="navbar">
+          <li><a href="index.html" class="active">Home</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section class="hero hero-home">
+    <div class="container hero-content">
+      <h2>Discover the Beauty of Ilocos Sur</h2>
+      <p>Explore breathtaking tourist spots and authentic local products.</p>
+    </div>
+  </section>
+
+  <main class="container">
+    <!-- Section 1 -->
+    <section class="section1">
+      <h2>Tourist Spots and Adventures</h2>
+
+      <section class="tourist-spot">
+        <h3>1. Aw-Asen Falls</h3>
+        <p>
+          Tallest Falls on Ilocos Region. Fresh Water that you can even drink. Located at Barangay Santo Rosario in Sigay town.
+        </p>
+        <img src="assets/Aw-Asen-Falls.jpg" alt="Aw-Asen Falls">
+        <p class="hashtags">#Falls #Awasen #coldwater #fresh #IlocosSur</p>
+      </section>
+
+      <section class="tourist-spot">
+        <h3>2. Santiago Cove</h3>
+        <p>
+          Dubbed “Boracay of the North” for its fine sand and clear water. Its clean and refreshing for summer. Located at Santiago Ilocos Sur.
+        </p>
+        <img src="assets/santiagocove.jpg" alt="Santiago Cove">
+        <p class="hashtags">#clearwater #beach #santiago #IlocosSur #thebest</p>
+      </section>
+
+      <section class="tourist-spot">
+        <h3>3. Baluarte Zoo</h3>
+        <p>
+          Baluarte Zoo is a wildlife sanctuary and mini-zoo owned by a local politician. It features exotic animals and interactive shows. A fun and educational experience for families and animal lovers.
+        </p>
+        <img src="assets/baluarte.jpg" alt="Baluarte Zoo">
+        <p class="hashtags">#BaluarteZoo #WildlifeSanctuary #FamilyFun #IlocosSur #Adventure</p>
+      </section>
+
+      <section class="tourist-spot">
+        <h3>4. Suso Beach</h3>
+        <p>
+          White sand beach with stunning sunsets. Has a great view and good for sunset. Perfect for photographer.
+        </p>
+        <img src="assets/susobeach.jpg" alt="Suso Beach">
+        <p class="hashtags">#HiddenBeach #ViganBeach #Relaxation #NatureLovers #IlocosSur</p>
+      </section>
+    </section>
+
+    <!-- Section 2 -->
+    <section class="section2">
+      <div class="feature-presentation">
+        <div class="feature-info">
+          <h1>Authentic Ilocos Sur Products</h1>
+          <p>
+            Discover the finest local products crafted by skilled artisans. From handwoven fabrics to delicious delicacies, support local businesses and bring home a piece of Ilocos Sur.
+          </p>
+        </div>
+      </div>
+
+      <h2>Locale Products</h2>
+      <div class="product-grid">
+        <!-- Product Cards -->
+        <div class="product-card" data-product-id="1">
+          <img src="assets/tapuey.jpg" alt="Tapuey" />
+          <h4>Tapuey</h4>
+          <p>A traditional rice wine from the highlands of Ilocos, often served during festivals and celebrations.</p>
+          <p class="price">₱250</p>
+          <button class="cart-btn" onclick="toggleCart(this)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-product-id="2">
+          <img src="assets/viganlonggan.jpg" alt="Vigan Longganisa" />
+          <h4>Vigan Longganisa</h4>
+          <p>The famous garlicky, tangy sausage of Vigan, usually served with vinegar and rice.</p>
+          <p class="price">₱190</p>
+          <button class="cart-btn" onclick="toggleCart(this)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-product-id="3">
+          <img src="assets/abeliloco.jpg" alt="Abel Iloco" />
+          <h4>Abel Iloco</h4>
+          <p>A handwoven traditional textile made from cotton, showcasing intricate Ilocano patterns and craftsmanship.</p>
+          <p class="price">₱350</p>
+          <button class="cart-btn" onclick="toggleCart(this)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-product-id="4">
+          <img src="assets/sukangilocano.jpg" alt="Sukang Ilocano" />
+          <h4>Sukang Ilocano</h4>
+          <p>A strong, naturally fermented vinegar made from sugarcane, widely used in Ilocano cooking.</p>
+          <p class="price">₱120</p>
+          <button class="cart-btn" onclick="toggleCart(this)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-product-id="5">
+          <img src="assets/bagnet.jpg" alt="Bagnet" />
+          <h4>Bagnet</h4>
+          <p>A crispy deep-fried pork belly delicacy, crunchy on the outside yet tender inside, a must-try Ilocano dish.</p>
+          <p class="price">₱250</p>
+          <button class="cart-btn" onclick="toggleCart(this)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-product-id="6">
+          <img src="assets/royalbibingka.JPG" alt="Royal Bibingka" />
+          <h4>Royal Bibingka</h4>
+          <p>A chewy rice cake topped with cheese and margarine, uniquely found in Ilocos Sur.</p>
+          <p class="price">₱120</p>
+          <button class="cart-btn" onclick="toggleCart(this)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-product-id="7">
+          <img src="assets/okoy.png" alt="Okoy" />
+          <h4>Okoy</h4>
+          <p>Crispy shrimp fritters mixed with vegetables and batter, commonly eaten as street food or snacks.</p>
+          <p class="price">₱200</p>
+          <button class="cart-btn" onclick="toggleCart(this)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-product-id="8">
+          <img src="assets/basiwine.jpg" alt="Basi Wine" />
+          <h4>Basi Wine</h4>
+          <p>A traditional Ilocano wine made from fermented sugarcane, enjoyed for its mildly sweet and tangy taste.</p>
+          <p class="price">₱300</p>
+          <button class="cart-btn" onclick="toggleCart(this)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-product-id="9">
+          <img src="assets/kalamay1.jpg" alt="Kalamay" />
+          <h4>Kalamay</h4>
+          <p>A sticky rice delicacy made with glutinous rice, coconut milk, and sugar, often sold in coconut shells.</p>
+          <p class="price">₱100</p>
+          <button class="cart-btn" onclick="toggleCart(this)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-product-id="10">
+          <img src="assets/burnayjar.jpg" alt="Burnay Jar" />
+          <h4>Burnay Jar</h4>
+          <p>Large earthenware jars made from clay, traditionally used for storing water, vinegar, or basi wine.</p>
+          <p class="price">₱650</p>
+          <button class="cart-btn" onclick="toggleCart(this)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-product-id="11">
+          <img src="assets/bamboobasket.jpg" alt="Bamboo Basket" />
+          <h4>Bamboo Basket</h4>
+          <p>Locally crafted baskets made from bamboo, used for storage, farming, or as eco-friendly souvenirs.</p>
+          <p class="price">₱400</p>
+          <button class="cart-btn" onclick="toggleCart(this)">Add to Cart</button>
+        </div>
+
+        <div class="product-card" data-product-id="12">
+          <img src="assets/tinubong.jpg" alt="Tinubong" />
+          <h4>Tinubong</h4>
+          <p>A sweet sticky rice cake cooked inside young bamboo tubes, giving it a unique smoky aroma and flavor.</p>
+          <p class="price">₱100</p>
+          <button class="cart-btn" onclick="toggleCart(this)">Add to Cart</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-container">
+      <p>&copy; 2025 Ilocos Sur Tourism. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
